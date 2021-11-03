@@ -3,4 +3,4 @@
 
 ### IT기기 정보
 
-[마크다운 작성 참고](https://bskyvision.com/1140)
+>[마크다운 작성 참고](https://bskyvision.com/1140)
