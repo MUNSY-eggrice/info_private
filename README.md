@@ -4,6 +4,6 @@
 ### IT기기 정보
 
 <ul>
-  <li>[마크다운 작성 참고](https://bskyvision.com/1140)</li>
+  <li><a href="https://bskyvision.com/1140">마크다운 작성 참고</a></li>
   <li>[이모티콘 코드](https://www.webfx.com/tools/emoji-cheat-sheet/)</li>
 </ul>
