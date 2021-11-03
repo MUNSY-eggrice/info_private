@@ -1,7 +1,7 @@
 # :notebook_with_decorative_cover: 여러가지를 기록하는 공간
-### 언어 공부
+### :pencil2: 언어 공부
 
-### IT기기 정보
+### :computer: IT기기 정보
 >[PC 외부 기기]
 
 ### READ.md 
