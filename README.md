@@ -1,4 +1,4 @@
-# 여러가지를 기록하는 공간
+# :notebook_with_decorative_cover: 여러가지를 기록하는 공간
 ### 언어 공부
 
 ### IT기기 정보
