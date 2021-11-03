@@ -2,7 +2,7 @@
 ### :pencil2: 언어 공부
 
 ### :computer: IT기기 정보
->[PC 외부 기기]
+>[PC 외부 기기](https://github.com/MUNSY-eggrice/info_private/blob/main/IT_device/USB_HUB.txt)
 
 ### READ.md 
 <ul>
