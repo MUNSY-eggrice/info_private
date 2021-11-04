@@ -5,5 +5,5 @@
 * [IT 문서](https://github.com/MUNSY-eggrice/info_private/blob/main/IT_device/IT.md)
 
 ### READ.md 
-* [마크다운 작성 참고]("https://bskyvision.com/1140")
-* [이모티콘 코드]("https://www.webfx.com/tools/emoji-cheat-sheet")
+* [마크다운 작성 참고](https://bskyvision.com/1140)
+* [이모티콘 코드](https://www.webfx.com/tools/emoji-cheat-sheet)
