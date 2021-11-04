@@ -2,7 +2,7 @@
 ### :pencil2: 언어 공부
 
 ### :computer: IT기기 정보
-* [IT 문서](https://github.com/MUNSY-eggrice/info_private/tree/main/IT_device)
+* [IT 문서](https://github.com/MUNSY-eggrice/info_private/blob/main/IT_device/IT.md)
 
 ### READ.md 
 * [마크다운 작성 참고]("https://bskyvision.com/1140")
