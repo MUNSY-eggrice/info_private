@@ -5,3 +5,4 @@
 * [4 연산을 위한 변수](https://github.com/MUNSY-eggrice/info_private/blob/main/C/4_Variable%20for%20Calculation.md)
 * [5 연산자에 관하여](https://github.com/MUNSY-eggrice/info_private/blob/main/C/5_Operator%20in%20C.md)
 * [6 키보드로 받는 입력과 C언어의 키워드](https://github.com/MUNSY-eggrice/info_private/blob/main/C/6_Input%20of%20C.md)
+* [7 컴퓨터가 데이터를 표현하는 법](https://github.com/MUNSY-eggrice/info_private/blob/main/C/7_Data%20Expression%20of%20Computer.md)
