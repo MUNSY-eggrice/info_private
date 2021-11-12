@@ -6,3 +6,5 @@
 * [5 연산자에 관하여](https://github.com/MUNSY-eggrice/info_private/blob/main/C/5_Operator%20in%20C.md)
 * [6 키보드로 받는 입력과 C언어의 키워드](https://github.com/MUNSY-eggrice/info_private/blob/main/C/6_Input%20of%20C.md)
 * [7 컴퓨터가 데이터를 표현하는 법](https://github.com/MUNSY-eggrice/info_private/blob/main/C/7_Data%20Expression%20of%20Computer.md)
+* [8 비트 연산자](https://github.com/MUNSY-eggrice/info_private/blob/main/C/8_Bit%20Operator.md)
+* [9 C언어가 제공하는 기본 자료형의 이해](https://github.com/MUNSY-eggrice/info_private/blob/main/C/9_Comprehension%20of%20basic%20data%20type.md)
