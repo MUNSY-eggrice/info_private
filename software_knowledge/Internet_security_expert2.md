@@ -107,3 +107,75 @@ service vsftp restart(시험엔 나올지 모르겠다, 사용 안할 가능성 
 vi /etc/ftpaccess
 loginfails 3
 service vsftp restart(마찬가지로 시험에서는 작성 안해도 될 것 같다.)
+```
+## IPTABLES 에서 들어오는 패킷 중 icmp 패킷 모두 차단 설정법
+
+iptables -A INPUT -p icmp -j DROP
+
+## sendmail 설정 중 거부하고 싶은 ip address 설정법
+```
+vi /etc/mail/access
+123.123.123.123 REJECT (123.123.123.123 차단)
+cd /etc/mail
+makemap hash access < access
+```
+참고로 아이피뒤에 붙이는 옵션은 다음과 같다.
+OK : 모두 허용.
+RELAY : 수신/발신 허용.
+REJECT : 수신/발신 거부.
+DISCARD : /etc/sendmail.cf에 지정된 곳으로 메일을 폐기함 (스팸 메일함으로 이동)
+
+## http.conf 설정으로 index파일이 없는 경우 홈 디렉토리가 디렉토리 형태로 안보이게 설정하는 법
+```
+find / -name httpd.conf 2> /dev/null
+vi /위에서 찾은 경로/httpd.conf
+Options Indexes FollowSymLinks  -> Options FollowSymLinks
+```
+# 포트 설정 및 권한 설정
+## 인가되지 않은(Well-known 포트가 아닌) 백도어 포트 번호 찾기
+
+1. Well-Known 포트는 1~1024번 포트이다.
+2. netstat 명령어를 사용한다. $netstat -nat
+3. 포트번호에서 1~1024가 아닌 포트가 비인가 포트이다.
+4. netstat -nap 명령을 사용하면 해당 포트를 사용중인 프로세스의 정보를 얻을 수 있다.
+
+## 4000~5000번대 사이의 TCP포트를 열어 LISTEN하고 있다. 해당 포트 찾기
+
+1. netstat -nat | grep LISTEN 명령으로 연결된 모든 TCP 포트 번호를 출력한다.
+2. 4000과 5000번 사이의 포트 번호를 찾아 답안에 기술하면 된다.
+
+## 권한 설정하는 방법
+chmod 명령어를 사용한다
+
+* r : read : 4
+* w : write : 2
+* x : excute : 1
+
+위 숫자들을 더한 값으로 사용할 수 있다.
+
+chmod 644 (rw_r__r__) 소유자는 읽기 쓰기 가능, 다른 그룹과 사용자는 읽기만 가능하다.
+
+## /etc/services 파일 설정법
+
+이 파일은 리눅스 서버에서 사용하는 모든 포트들에 대한 정의가 설정되어있다.
+
+설정을 통해 기본 사용 포트를 변경하여 알려진(Well-known)포트를 통해 기본적인 해킹 툴들을 차단할 수 있다.
+
+ex)
+서비스명 	 포트/프로토콜 	 별칭  
+ftp                21/tcp			* 별칭은 반드시 정해야 하는 것은 아님  
+fsp                21/udp 	 fspd  
+
+## 아파치 서버(웹서버)에서 1.2.3.4 ip만을 차단하려고 한다.
+
+1. find / -name httpd.conf 2>/dev/null
+2. vi /1에서 찾은 경로/httpd.conf
+3. <Directory/>
+    Order deny, allow
+    Deny from 1.2.3.4
+    Allow from all
+    </Directory>
+4. service httpd restart
+
+## 현재 서버가 sniffing 당하고 있다. 그 근거와 차단 방법은?
+
